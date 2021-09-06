@@ -1,0 +1,107 @@
+.big-data-ai-tabs {
+  :global {
+    .ant-tabs-nav {
+      margin: 25px auto 10px auto;
+
+      &::before {
+        border-bottom: 0; // 去掉整个tabs的下划线
+      }
+
+      .ant-tabs-ink-bar {
+        height: 0; // 去掉原生的active下划线
+      }
+    }
+
+    .ant-tabs-tab {
+      .ant-tabs-tab-btn {
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 25px;
+      }
+
+      &::after {
+        position: absolute;
+        width: 40px;
+        height: 4px;
+        background: rgba(223, 223, 251, 1);
+        transition: all 0.8s;
+        content: '';
+      }
+
+      &:nth-child(1) {
+        &::after {
+          right: -16px;
+          bottom: 0;
+          border-radius: 4px;
+        }
+      }
+
+      &:nth-child(2) {
+        &::after {
+          bottom: 0;
+          left: -16px;
+          border-radius: 4px;
+        }
+      }
+
+      &.ant-tabs-tab-active {
+        color: rgba(27, 112, 228, 1);
+        font-weight: bold;
+
+        &::after {
+          background: rgba(27, 112, 228, 1);
+        }
+      }
+    }
+  }
+}
+
+.big-data-card-list-container {
+  display: grid;
+  grid-template-rows: repeat(2, 150px);
+  grid-template-columns: repeat(2, 50%);
+  width: 70%;
+  margin: 0 auto;
+  margin: 10px auto 50px auto;
+  border: 2px solid rgba(240, 245, 253, 0.28);
+
+  .card-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #e9e9e9;
+
+    &:hover {
+      background: rgba(247, 250, 255, 1);
+      box-shadow: 0 0 7px 0 rgba(27, 112, 228, 0.28);
+    }
+
+    > div:nth-child(1) {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 35%;
+      height: 100%;
+    }
+
+    > div:nth-child(2) {
+      width: 65%;
+
+      > span {
+        display: block;
+
+        &:nth-child(1) {
+          margin: -15px 0 15px 0;
+          font-weight: 800;
+          font-size: 15px;
+        }
+
+        &:nth-child(2) {
+          padding-right: 10px;
+          font-size: 14px;
+          line-height: 20px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,39 @@
+@import '../../layouts/comStyle.less';
+@import '../../global.less';
+
+.self-autocomplete-container {
+  margin-top: 45px !important;
+
+  :global {
+    .ant-input-search-icon {
+      margin-left: 0;
+      color: #fff;
+      font-size: 18px;
+    }
+
+    .ant-select-dropdown {
+      z-index: 50 !important;
+    }
+  }
+}
+
+.props-autocomplete-container {
+  :global {
+    .ant-input-affix-wrapper,
+    .ant-input-group-addon,
+    .ant-input-search-button {
+      background: transparent !important;
+
+      input,
+      button {
+        color: #fff !important;
+        background-color: transparent;
+      }
+    }
+
+    .ant-input-search-icon,
+    .ant-input-clear-icon {
+      color: #fff;
+    }
+  }
+}

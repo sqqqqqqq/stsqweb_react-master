@@ -1,0 +1,107 @@
+.container {
+  height: 800px;
+
+  > div:first-child {
+    height: 135px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 135px;
+    letter-spacing: 1px;
+    text-align: center;
+  }
+
+  .tabs {
+    max-width: 1200px;
+    height: 620px;
+    margin: 0 auto;
+    background-color: #fff;
+
+    :global {
+      .ant-tabs-nav-list {
+        justify-content: space-between;
+        width: 90%;
+      }
+
+      .ant-tabs-tab {
+        margin-right: 5px;
+      }
+    }
+
+    .tabDetails {
+      width: 90%;
+      margin: 0 auto;
+
+      > div:first-child {
+        margin-top: 5px;
+
+        > span {
+          font-weight: 700;
+          font-size: 16px;
+        }
+
+        > div {
+          margin: 20px 0;
+          color: #666;
+          font-size: 14px;
+          letter-spacing: 1px;
+        }
+      }
+
+      :global {
+        .ant-card {
+          height: 330px;
+          // overflow: hidden;
+          color: #303133;
+          background-color: #fff;
+          border: 1px solid #f0f0f0;
+          border-radius: 4px;
+          box-shadow: 0 0 23px 0 rgba(57, 57, 57, 0.18);
+          transition: 0.3s;
+
+          &:hover {
+            box-shadow: 0 0 23px 0 rgba(57, 57, 57, 0.34);
+            // transform: translateY(-10px);
+            cursor: pointer;
+          }
+
+          > .ant-card-body {
+            height: 100%;
+
+            > img {
+              display: block;
+              width: 100%;
+              height: 220px;
+            }
+
+            > div {
+              display: -webkit-box;
+
+              /* autoprefixer: on */
+              margin-top: 15px;
+              overflow: hidden;
+              font-size: 16px;
+              text-align: center;
+              text-overflow: ellipsis;
+              word-wrap: break-word;
+              word-break: break-all;
+              -webkit-line-clamp: 2;
+
+              /* autoprefixer: off */
+              -webkit-box-orient: vertical;
+            }
+          }
+        }
+      }
+    }
+
+    .industryDetailsBtn {
+      display: block;
+      width: 194px;
+      height: 38px;
+      margin: 25px auto 0;
+      font-weight: 700;
+      font-size: 16px;
+      border-radius: 20px;
+    }
+  }
+}

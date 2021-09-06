@@ -1,0 +1,57 @@
+.Scene {
+  padding-bottom: 22px;
+  background-color: #fff;
+  .SceneWrap {
+    width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+
+    .SceneType {
+      width: auto;
+      height: 280px;
+      margin: 0 10px;
+      background: #fff;
+      border-top: 5px solid #5b7efc;
+      box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.1);
+      transform: translateY(-4px);
+
+      &:hover {
+        p:nth-child(1),
+        p:nth-child(2) {
+          color: #fff;
+        }
+
+        color: #fff;
+        background: linear-gradient(0deg, #5b7efc, #6fb4fe);
+        box-shadow: 0 0 15px 5px #4387c76b;
+        cursor: pointer;
+        transition: all 0.4s linear;
+      }
+      > img {
+        display: block;
+        width: 90px;
+        height: 100px;
+        margin: 0 auto;
+        margin-bottom: 20px;
+        padding-top: 25px;
+      }
+      > div {
+        > p:nth-child(1) {
+          color: #181818;
+          font-weight: 600;
+          font-size: 18px;
+          line-height: 30px;
+          text-align: center;
+        }
+        > p:nth-child(2) {
+          padding: 0 30px;
+          color: #333;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 24px;
+          text-align: center;
+        }
+      }
+    }
+  }
+}

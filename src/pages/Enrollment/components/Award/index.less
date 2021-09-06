@@ -1,0 +1,146 @@
+@import '../../index.less';
+
+.enrollment-award-container {
+  width: 100%;
+  max-width: @validWidth;
+  margin: 30px auto 0 auto;
+  padding-bottom: 10px;
+  background: #fff;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 10px;
+  box-shadow: 0 0 8px 0 rgba(232, 237, 250, 0.6), 0 2px 4px 0 rgba(232, 237, 250, 0.6);
+
+  .platform {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    box-sizing: border-box;
+    width: 80%;
+    height: 100px;
+    margin: 30px auto 0 auto;
+
+    .platform-item {
+      position: relative;
+      width: 253px;
+      height: 100%;
+      background: rgba(255, 255, 255, 1);
+      border-radius: 11px 11px 0 0;
+      box-shadow: 0 6px 20px 0 rgba(125, 112, 254, 0.34);
+      transition: all 0.5s;
+
+      .platform-item-note {
+        display: block;
+        color: rgba(51, 51, 51, 1);
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 40px;
+        letter-spacing: 1px;
+        text-align: center;
+      }
+
+      .platform-item-rank {
+        position: absolute;
+        right: 0;
+        left: 0;
+        margin: auto;
+      }
+
+      .platform-item-note,
+      .platform-item-money {
+        position: absolute;
+        right: 0;
+        bottom: 10px;
+        left: 0;
+        margin: 0 auto 0 auto;
+      }
+
+      &:hover {
+        transform: translateY(-7px);
+      }
+
+      &:nth-child(1),
+      &:nth-child(5) {
+        z-index: 1;
+        height: 60px;
+
+        .platform-item-rank {
+          top: -30px;
+        }
+      }
+
+      &:nth-child(2),
+      &:nth-child(4) {
+        z-index: 2;
+        height: 80px;
+
+        .platform-item-rank {
+          top: -40px;
+        }
+      }
+
+      &:nth-child(3) {
+        z-index: 3;
+        .platform-item-rank {
+          top: -50px;
+        }
+      }
+    }
+  }
+
+  .ultimate-award {
+    display: grid;
+    grid-template-columns: 49% 49%;
+    align-content: center;
+    height: 250px;
+    margin-top: 30px;
+    text-align: center;
+    background: rgba(255, 255, 255, 1);
+    border-radius: 11px;
+
+    .ultimate-award-texts {
+      // text-align: center;
+
+      div:nth-child(1) {
+        padding-bottom: 20px;
+        color: rgba(0, 0, 0, 1);
+        font-weight: 800;
+        font-size: 24px;
+        line-height: 40px;
+      }
+
+      div:nth-child(2) {
+        display: grid;
+        grid-template-rows: repeat(4, 40px);
+        grid-template-columns: repeat(2, auto);
+        margin-left: 50px;
+
+        span {
+          position: relative;
+          align-self: center;
+          color: rgba(51, 51, 51, 1);
+          font-weight: 500;
+          font-size: 18px;
+          text-align: left;
+        }
+
+        span::before {
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          left: -25px;
+          margin: auto 0;
+          color: rgba(102, 103, 254, 1);
+          content: '★';
+        }
+      }
+    }
+
+    :global {
+      .ant-carousel {
+        width: 49%;
+        padding-left: 80px;
+      }
+    }
+  }
+}

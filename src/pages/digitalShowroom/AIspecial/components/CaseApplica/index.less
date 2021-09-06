@@ -1,0 +1,76 @@
+.Core {
+  width: 100%;
+  overflow: hidden;
+  background-color: #fff;
+  .CoreWrap {
+    width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+
+    .Coredetail {
+      margin: 0 3px 56px;
+      padding: 35px 0;
+      overflow: hidden;
+      box-shadow: 0 0 16px 0 rgba(82, 71, 71, 0.18);
+
+      :global {
+        .ant-tabs-tab {
+          height: 50px;
+          padding: 0 50px 0;
+          font-weight: 600;
+          font-size: 20px;
+          font-family: PingFangSC-Regular, PingFang SC;
+          line-height: 55px;
+          text-align: center;
+        }
+        .ant-tabs.ant-tabs-left-bar {
+          float: left;
+          margin-right: -1px;
+          margin-bottom: 0;
+          border-right: 1px solid #e8e8e8;
+        }
+
+        .ant-tabs-content {
+          display: flex;
+          width: 100%;
+          .ant-tabs-tabpane {
+            padding-top: 45px;
+            padding-left: 50px;
+            > div {
+              position: relative;
+              float: left;
+              width: 32%;
+              height: 100%;
+              > span {
+                position: absolute;
+                display: block;
+              }
+              > span:nth-child(1) {
+                font-weight: 400;
+                font-size: 20px;
+              }
+              > span:nth-child(2) {
+                margin-top: 52px;
+                padding-right: 80px;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 28px;
+              }
+            }
+            div:nth-child(2) {
+              float: left;
+              width: 720px;
+              height: 410px;
+              margin-top: auto;
+              > img {
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

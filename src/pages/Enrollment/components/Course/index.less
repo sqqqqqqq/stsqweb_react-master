@@ -1,0 +1,73 @@
+@import '../../index.less';
+
+.enrollment-course-container {
+  max-width: @validWidth;
+  margin: 0 auto;
+  margin-bottom: 50px;
+  background: rgba(246, 248, 251, 1);
+
+  > div:nth-child(2) {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 150px;
+    background: #fff;
+    background-repeat: no-repeat;
+    background-size: 100% 100% !important;
+
+    > .course-item {
+      display: flex;
+      align-content: center;
+      justify-content: center;
+      height: 60px;
+
+      > div:nth-child(1) {
+        color: rgba(0, 0, 0, 1);
+        font-weight: 400;
+        font-size: 45px;
+        font-family: fantasy;
+        // font-family: MF LiHei Noncommercial;
+        font-family: yingliheiti;
+        line-height: 60px;
+        text-shadow: 0 3px 5px rgba(143, 119, 254, 0.27);
+        background: linear-gradient(0deg, rgba(153, 123, 253, 1) 0%, rgba(102, 103, 254, 1) 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+
+      > div:nth-child(2) {
+        padding: 10px 0 10px 10px;
+
+        span {
+          display: block;
+          height: 20px;
+          color: rgba(0, 0, 0, 1);
+          font-weight: 500;
+          font-size: 14px;
+          font-family: PingFang SC;
+          line-height: 20px;
+        }
+      }
+
+      &:nth-child(1) {
+        margin-top: -45px;
+      }
+
+      &:nth-child(2) {
+        margin-top: 45px;
+      }
+
+      &:nth-child(3) {
+        margin-top: -45px;
+      }
+
+      &:nth-child(4) {
+        margin-top: 45px;
+      }
+
+      &:nth-child(5) {
+        margin-top: -45px;
+      }
+    }
+  }
+}

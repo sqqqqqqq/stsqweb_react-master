@@ -1,0 +1,55 @@
+.roleModal {
+  .title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    color: white;
+    background-color: skyblue;
+    background-image: url('../../../../assets/conferenceSystem/roleBanner.png');
+    background-size: cover;
+    p {
+      margin-top: 2px;
+      margin-bottom: 3px;
+    }
+  }
+  .roleCardList {
+    position: relative;
+    display: flex;
+    padding: 10px;
+    .roleCard {
+      width: 50%;
+      margin: 20px;
+      .img {
+        width: 100px;
+        border-radius: 50%;
+      }
+      .roleName {
+        margin-top: 8px;
+        margin-bottom: 5px;
+        font-weight: bold;
+        font-size: 20px;
+      }
+      .roleDescription {
+        color: gray;
+      }
+    }
+    .forbiddenCard {
+      position: absolute;
+      z-index: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: calc(100% - 20px);
+      height: calc(100% - 20px);
+      font-weight: bold;
+      font-size: 20px;
+      background-color: rgba(255, 255, 255, 0.5);
+    }
+    .blur {
+      filter: blur(5px);
+    }
+  }
+}

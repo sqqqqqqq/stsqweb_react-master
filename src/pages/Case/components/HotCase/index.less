@@ -1,0 +1,102 @@
+.hotCase {
+  background-color: #fff;
+
+  > div {
+    max-width: 1200px;
+    height: 600px;
+    margin: 0 auto;
+
+    > div:first-child {
+      height: 135px;
+      // color: #515a6e;
+      font-weight: bold;
+      font-size: 24px;
+      line-height: 135px;
+      letter-spacing: 1px;
+      text-align: center;
+    }
+
+    .container {
+      display: grid;
+      display: -ms-grid;
+      grid-gap: 20px;
+      grid-template-rows: repeat(2, 50%);
+      grid-template-columns: repeat(4, auto);
+      height: 340px;
+      -ms-grid-rows: 49% 25px 49%;
+      -ms-grid-columns: 23% 2% 23% 2% 23% 2% 23%;
+
+      > div {
+        background-size: 100% 100%;
+        transform: scale(1);
+        transition: all 0.2s;
+
+        &:hover {
+          transform: scale(1.05);
+          cursor: pointer;
+          transition: all 0.2s;
+        }
+      }
+
+      > div:first-child {
+        -ms-grid-row: 1;
+        -ms-grid-column: 1;
+        grid-column-start: span 2;
+        -ms-grid-column-span: 3;
+      }
+
+      > div:nth-child(2) {
+        -ms-grid-row: 1;
+        -ms-grid-column: 5;
+      }
+
+      > div:nth-child(3) {
+        -ms-grid-row: 1;
+        -ms-grid-column: 7;
+      }
+
+      > div:nth-child(4) {
+        -ms-grid-row: 3;
+        -ms-grid-column: 1;
+      }
+
+      > div:nth-child(5) {
+        -ms-grid-row: 3;
+        -ms-grid-column: 3;
+      }
+
+      > div:last-child {
+        -ms-grid-row: 3;
+        -ms-grid-column: 5;
+        grid-column-start: span 2;
+        -ms-grid-column-span: 3;
+      }
+
+      > div > span {
+        display: -webkit-box;
+        display: block;
+        margin-left: 25px;
+        overflow: hidden;
+        color: white;
+        // -webkit-line-clamp: 2;
+
+        /* autoprefixer: off */
+        -webkit-box-orient: vertical;
+
+        /* autoprefixer: on */
+
+        &:first-child {
+          margin-top: 40px;
+          font-size: 24px;
+          -webkit-line-clamp: 2;
+        }
+
+        &:nth-child(2) {
+          margin-top: 25px;
+          font-size: 16px;
+          -webkit-line-clamp: 1;
+        }
+      }
+    }
+  }
+}

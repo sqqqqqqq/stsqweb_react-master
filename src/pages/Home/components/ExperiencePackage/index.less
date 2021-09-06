@@ -1,0 +1,53 @@
+.experiencePackage {
+  min-width: 800px;
+
+  .experiencePackage-card {
+    min-width: 400px;
+    height: 230px;
+    background: #fff;
+    box-shadow: 0 5px 12px 4px rgba(51, 119, 255, 0.09), 0 3px 6px 0 rgba(51, 119, 255, 0.12);
+
+    .experiencePackage-card-body {
+      display: flex;
+      justify-content: space-between;
+      padding: 30px 20px;
+
+      > div {
+        width: 65%;
+
+        > span {
+          display: block;
+          padding: 10px 0;
+
+          &:nth-child(1) {
+            color: #373d41;
+            font-weight: 600;
+            font-size: 20px;
+          }
+
+          &:nth-child(2) {
+            font-size: 16px;
+          }
+        }
+
+        .experiencePackage-card-body-btn {
+          width: 120px;
+          height: 40px;
+          margin-top: 10px;
+          color: #fff;
+          font-size: 18px;
+          line-height: 40px;
+          text-align: center;
+          background: linear-gradient(90deg, #2579ff 0%, #2aa2ff 100%);
+          border-radius: 2px;
+          cursor: pointer;
+        }
+      }
+
+      > img {
+        display: block;
+        margin-top: -20px;
+      }
+    }
+  }
+}

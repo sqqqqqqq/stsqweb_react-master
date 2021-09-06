@@ -1,0 +1,85 @@
+.footerContent {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  width: 100%;
+  height: 75px;
+  overflow: hidden;
+  color: #909090;
+  font-size: 14px;
+  background-color: #f7f8fa;
+  box-shadow: 0 0 10px 0 #909090;
+
+  > div {
+    line-height: 30px;
+    text-align: center;
+  }
+
+  :global {
+    .ant-pro-global-footer {
+      margin: 0;
+    }
+  }
+}
+
+.homeFooter {
+  position: relative;
+  height: 209px;
+  padding: 20px 0 40px;
+  // box-shadow: 0 5px 22px 0 rgba(80, 80, 80, 0.6);
+  color: #fff;
+  font-size: 12px;
+  text-align: center;
+  // background-color: #3e3e3e;
+  box-shadow: 0 5px 22px 0 hsla(0, 0%, 82.7%, 0.6);
+
+  .siteFooterCert {
+    margin: 0 15px 20px 15px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #d5d5d5;
+
+    a {
+      display: inline-block;
+      padding: 0 10px;
+      color: #333;
+      font-size: 12px;
+      text-decoration: none;
+    }
+  }
+
+  > p {
+    color: #333;
+  }
+
+  .siteFooterLogo {
+    margin-top: 20px;
+
+    // 底部logo大小和gec.10010.com/gd/ 网站完全一样
+    > a {
+      //政企网站底部logo暂不可跳转
+      cursor: default;
+    }
+
+    // > a:nth-child(1) {
+    //   img {
+    //     width: 118px;
+    //     height: 48px;
+    //   }
+    // }
+
+    > a:nth-child(1) {
+      img {
+        width: 115px;
+        height: 43px;
+      }
+    }
+
+    > a:nth-child(2) {
+      img {
+        width: 105px;
+        height: 43px;
+      }
+    }
+  }
+}

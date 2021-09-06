@@ -1,0 +1,82 @@
+@import '../../../../global.less';
+
+.app-storage-detail-container {
+  .apply-cooperation-btn {
+    display: block;
+    margin: 20px auto;
+  }
+
+  .text-container-title {
+    display: block;
+    color: @blueColor;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 50px;
+  }
+
+  .related-case {
+    width: @validWidth;
+    margin: 0 auto;
+
+    .app-storage-related-list {
+      width: @validWidth;
+      margin: 20px auto 0 auto;
+
+      :global {
+        .ant-card-body {
+          height: 200px;
+          border: none;
+          box-shadow: 0 0 12px 0 rgba(57, 57, 57, 0.18);
+
+          &:hover {
+            box-shadow: 0 0 12px 0 rgba(57, 57, 57, 0.34);
+            cursor: pointer;
+          }
+
+          > div {
+            display: -webkit-box;
+            overflow: hidden;
+
+            /* autoprefixer: off */
+            -webkit-box-orient: vertical;
+
+            /* autoprefixer: on */
+            &:nth-of-type(1) {
+              // 标题
+              color: #222;
+              font-weight: bold;
+              font-size: 16px;
+              -webkit-line-clamp: 2;
+            }
+
+            &:nth-of-type(2) {
+              height: 66px;
+              font-size: 14px;
+              -webkit-line-clamp: 3;
+            }
+          }
+
+          .ant-tag {
+            display: inline-block;
+            box-sizing: border-box;
+            margin: 5px 0;
+            padding: 0 10px;
+            color: @blueColor;
+            font-size: 12px;
+            line-height: 20px;
+            white-space: nowrap;
+            background-color: #fff;
+            border-color: @blueColor;
+            border-style: solid;
+            border-width: 1px;
+            border-radius: 2px;
+          }
+
+          .time {
+            color: #a5a5a5;
+          }
+        }
+      }
+    }
+  }
+}

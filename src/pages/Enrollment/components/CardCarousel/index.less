@@ -1,0 +1,34 @@
+@itemWidth: 230px;
+
+.type-carousel {
+  width: 90%;
+  margin: 0 auto;
+  margin-left: 13%;
+
+  :global {
+    .slick-arrow {
+      display: none;
+    }
+
+    .slick-slide {
+      transform: scale(0.8);
+    }
+
+    .slick-center {
+      transform: scale(1);
+    }
+
+    .slick-dots {
+      .slick-active {
+        button::before {
+          color: #6667fe;
+        }
+      }
+    }
+  }
+
+  .image {
+    width: @itemWidth;
+    height: 220px;
+  }
+}

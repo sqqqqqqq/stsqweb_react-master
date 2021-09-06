@@ -1,0 +1,177 @@
+@import '../../../../layouts/comStyle.less';
+
+.recent-news-container {
+  display: flex;
+  margin: 60px auto 0 auto;
+
+  .sliderDiv {
+    width: 50%;
+
+    .carouselItem {
+      position: relative;
+
+      img {
+        width: 100%;
+        height: 400px;
+        cursor: pointer;
+        transition: all 0.2s;
+
+        &:hover {
+          transform: scale(1.1);
+          transition: all 0.2s;
+        }
+      }
+
+      > div {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 50px;
+        color: white;
+        font-size: 18px;
+        line-height: 50px;
+        background-color: rgba(0, 0, 0, 0.5);
+
+        > span {
+          display: block;
+          width: 100%;
+          overflow: hidden;
+          white-space: nowrap;
+          text-align: center;
+          text-overflow: ellipsis;
+        }
+      }
+    }
+
+    :global {
+      .slick-arrow {
+        z-index: 1;
+        &::before {
+          color: rgba(255, 255, 255, 0.5);
+          font-size: 35px;
+        }
+      }
+      .slick-next {
+        right: 20px;
+      }
+      .slick-prev {
+        left: 20px;
+      }
+
+      .slick-dots {
+        li {
+          margin: 0 2px;
+        }
+
+        .slick-active {
+          button {
+            &::before {
+              color: #1b70e4;
+              transform: scale(1.05);
+            }
+          }
+        }
+        button {
+          &::before {
+            color: rgba(0, 0, 0, 0.5);
+            transform: scale(0.8);
+            transition: all 0.2s;
+          }
+
+          &:hover {
+            &::before {
+              color: #1b70e4;
+              transform: scale(1.05);
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .dynamic {
+    position: relative;
+    box-sizing: border-box;
+    width: 50%;
+    margin-left: 60px;
+
+    .imgLabel {
+      position: relative;
+      top: 20px;
+      left: 0;
+      text-align: left;
+    }
+
+    .briefList {
+      box-sizing: border-box;
+      margin-top: 40px;
+      text-align: left;
+
+      .firstTitle {
+        display: -webkit-box;
+        overflow: hidden;
+        font-weight: bold;
+        font-size: 24px;
+        white-space: normal;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+      }
+
+      > span:nth-child(2) {
+        display: block;
+        height: 22px;
+        color: #b5b2b2;
+      }
+
+      > span:nth-child(3) {
+        display: -webkit-box;
+        overflow: hidden;
+        color: #616161;
+        font-size: 16px;
+        line-height: 1.5;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+      }
+    }
+
+    .title {
+      display: block;
+      overflow: hidden;
+      color: black;
+      font-weight: bold;
+      font-size: 16px;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+
+      &:hover {
+        color: #2194ff;
+      }
+    }
+
+    > ul {
+      margin: 0 0 0 15px;
+      padding-left: 0;
+      list-style: square outside url('../../../../assets/home/lingxing.png');
+
+      > li {
+        height: 30px;
+        padding-top: 10px;
+        line-height: 30px;
+      }
+    }
+  }
+
+  .more {
+    position: absolute;
+    right: 30px;
+    bottom: 15px;
+    display: inline-block;
+    display: flex;
+    height: 15px;
+    color: #2194ff;
+    font-size: 15px;
+    line-height: 15px;
+    text-align: center;
+  }
+}

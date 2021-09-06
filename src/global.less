@@ -1,0 +1,107 @@
+@import '~antd/es/style/themes/default.less';
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+.colorWeak {
+  filter: invert(80%);
+}
+
+.ant-layout {
+  min-height: 100vh;
+}
+
+canvas {
+  display: block;
+}
+
+body {
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+@media (max-width: @screen-xs) {
+  .ant-table {
+    width: 100%;
+    overflow-x: auto;
+    &-thead > tr,
+    &-tbody > tr {
+      > th,
+      > td {
+        white-space: pre;
+        > span {
+          display: block;
+        }
+      }
+    }
+  }
+}
+
+// 兼容IE11
+@media screen and(-ms-high-contrast: active), (-ms-high-contrast: none) {
+  body .ant-design-pro > .ant-layout {
+    min-height: 100vh;
+  }
+}
+
+@validWidth: 1200px;
+@blueColor: #1890ff;
+@blueColorMain: #3377ff;
+@themeColor: #ff6024;
+@themeColorShadow: rgba(255, 96, 36, 0.2);
+
+.cusOrangeBtn() {
+  color: #fff;
+  background: @themeColor;
+  border-color: @themeColor;
+
+  &:active {
+    color: #fff !important;
+    background: #f14406 !important;
+    border-color: #f66f3e;
+  }
+
+  &:focus,
+  &:hover {
+    color: #fff !important;
+    background: #fa936e;
+    border-color: #fa936e;
+  }
+
+  &[disabled] {
+    color: rgba(0, 0, 0, 0.25);
+    text-shadow: none;
+    background: #f5f5f5;
+    border-color: #d9d9d9;
+    box-shadow: none;
+
+    &:hover {
+      color: rgba(0, 0, 0, 0.25) !important;
+    }
+  }
+}
+
+.cusPlainBtn() {
+  color: @themeColor !important;
+  background-color: #fff;
+  border-color: @themeColor;
+
+  &:focus,
+  &:hover {
+    background-color: #fff2ed;
+    border-color: #fa9f7d;
+  }
+
+  &:active {
+    background-color: #f8dfd5;
+  }
+}

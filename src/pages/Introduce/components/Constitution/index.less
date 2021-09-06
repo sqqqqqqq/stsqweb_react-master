@@ -1,0 +1,79 @@
+@import '../../../../layouts/comStyle.less';
+
+.introduce-constitution {
+  width: calc(@validWidth - 100px);
+  margin: 60px auto 40px auto;
+
+  .header {
+    position: relative;
+    // z-index: 100;
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+
+    .title {
+      width: 370px;
+      padding-right: 30px;
+      color: rgba(255, 255, 255, 1);
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 80px;
+      letter-spacing: 2px;
+      text-align: center;
+      background: rgba(27, 112, 228, 1);
+      border-radius: 10px 0 0 0;
+      box-shadow: 0 15px 28px 0 rgba(27, 112, 228, 0.3);
+      -webkit-clip-path: polygon(0 0, 100% 0, 90% 100%, 0% 100%);
+      clip-path: polygon(0 0, 100% 0, 90% 100%, 0% 100%);
+    }
+
+    .download {
+      width: 250px;
+      height: 60px;
+      margin: 20px 30px 0 0;
+      padding: 0;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 60px;
+      letter-spacing: 2px;
+      text-align: center;
+      background: linear-gradient(90deg, rgba(59, 228, 251, 0.97), rgba(31, 75, 206, 0.97));
+      border-radius: 6px;
+      box-shadow: 0 7px 49px 0 rgba(31, 75, 206, 0.23);
+
+      a {
+        color: rgba(255, 255, 255, 1);
+      }
+    }
+  }
+
+  .constitution-text {
+    width: 100%;
+    max-height: 800px;
+    margin-top: -80px;
+    padding: 30px;
+    padding-top: 80px;
+    overflow-y: scroll;
+    border-radius: 10px;
+    box-shadow: 0 14px 42px 0 rgba(31, 75, 206, 0.3);
+
+    &::-webkit-scrollbar {
+      width: 5px;
+      height: 5px;
+      background-color: rgba(244, 242, 254, 1);
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: rgb(216, 213, 213);
+      border-radius: 2.5px;
+    }
+
+    .loading {
+      margin-bottom: 0;
+      color: #222;
+      font-size: 20px;
+      line-height: 50px;
+      text-align: center;
+    }
+  }
+}

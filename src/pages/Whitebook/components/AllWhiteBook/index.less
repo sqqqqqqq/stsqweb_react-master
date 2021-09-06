@@ -1,0 +1,86 @@
+@import '../../../../layouts/comStyle.less';
+
+.allWhiteBooks {
+  .title {
+    display: flex;
+    justify-content: center;
+    margin-top: -200px;
+  }
+  .menu {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+  }
+  .whiteBook {
+    display: grid;
+    grid-row-gap: 30px;
+    grid-column-gap: 30px;
+    grid-template-rows: repeat(auto, 131px);
+    grid-template-columns: repeat(3, 25%);
+    justify-content: center;
+    box-sizing: border-box;
+    height: auto;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    .whiteBookCard {
+      background-color: white;
+      border-radius: 4px;
+      box-shadow: 0 2px 6px 0 #b6b6b6;
+
+      .section {
+        display: -webkit-box;
+        margin: 30px 30px 0 30px;
+        overflow: hidden;
+        -webkit-line-clamp: 1;
+        -webkit-box-orient: vertical;
+        span {
+          display: block;
+          color: #666;
+          font-size: 18px;
+        }
+      }
+      .footer {
+        height: 40px;
+        margin: 0 30px 0 30px;
+        overflow: hidden;
+        line-height: 40px;
+        > span {
+          color: #999;
+          font-size: 14px;
+          line-height: 22px;
+          letter-spacing: 1px;
+        }
+      }
+      .downloadBtn {
+        float: right;
+        color: #999;
+        letter-spacing: 1px;
+      }
+      .downloadBtn:hover {
+        color: #1890ff;
+        background-color: white;
+      }
+    }
+    .whiteBookCard:hover {
+      box-shadow: 0 2px 12px 0 #1890ff;
+      .section {
+        span {
+          color: #1890ff;
+          cursor: pointer;
+        }
+      }
+      .footer {
+        > span {
+          color: #1890ff;
+        }
+      }
+    }
+  }
+  .loading {
+    margin-bottom: 20px;
+    color: rgba(167, 159, 159, 0.5);
+    font-size: 16px;
+    line-height: 50px;
+    text-align: center;
+  }
+}

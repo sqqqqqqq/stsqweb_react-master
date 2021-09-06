@@ -1,0 +1,125 @@
+@import '../../../../layouts/comStyle.less';
+
+.wo-cloud-ai-container {
+  .product-case-container {
+    height: 550px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+
+    :global {
+      .ant-menu {
+        display: flex;
+        justify-content: space-between;
+        width: @validWidth;
+        margin: 0 auto;
+        color: #fff;
+        font-size: 16px;
+        background-color: transparent;
+        border-bottom: 1px solid rgba(119, 131, 162, 0.32);
+
+        .ant-menu-item {
+          padding-right: 20px;
+          padding-left: 20px;
+        }
+      }
+    }
+
+    .case-item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      box-sizing: border-box;
+      width: @validWidth;
+      margin: 90px auto 50px auto;
+
+      > div:nth-child(1) {
+        width: 35%;
+
+        > img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+
+      > div:nth-child(2) {
+        width: 60%;
+        margin-left: 5%;
+        color: #fff;
+        font-size: 14px;
+
+        > h3 {
+          color: #fff;
+          line-height: 50px;
+        }
+
+        > span {
+          display: block;
+          margin: 20px 0;
+          line-height: 30px;
+        }
+      }
+    }
+  }
+
+  .ai-case-container {
+    width: @validWidth;
+    margin: 0 auto;
+
+    .menu {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+
+      button {
+        width: 250px;
+        height: 55px;
+        padding: 0;
+        color: rgba(153, 153, 153, 1);
+        font-size: 18px;
+        line-height: 55px;
+        border-radius: 6px;
+        box-shadow: 0 3px 12px 0 rgba(27, 112, 228, 0.3);
+
+        img {
+          margin-right: 5px;
+          vertical-align: middle;
+        }
+      }
+
+      .is-active {
+        color: #fff;
+        background: rgba(27, 112, 228, 1);
+      }
+    }
+
+    .app-case-item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 35px;
+
+      .app-case-item-video {
+        width: 30%;
+        height: 200px;
+      }
+      .app-case-item-text {
+        width: 65%;
+
+        > h3 {
+          color: rgba(51, 51, 51, 1);
+          font-weight: bold;
+          font-size: 16px;
+          line-height: 40px;
+        }
+
+        > span {
+          display: block;
+          margin-bottom: 10px;
+          color: rgba(51, 51, 51, 1);
+          font-size: 14px;
+          line-height: 30px;
+        }
+      }
+    }
+  }
+}

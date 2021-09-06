@@ -1,0 +1,228 @@
+.caseDetails {
+  .detail {
+    display: flex;
+    align-items: center;
+    width: 80%;
+    height: 120px;
+    margin: 50px auto 0 auto;
+    padding: 0 10%;
+    font-size: 14px;
+    background: #f3f3f3;
+  }
+}
+
+//详情页banner
+.DetailsBanner {
+  display: flex;
+  align-items: center;
+  height: 305px;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+
+  > div {
+    width: 80%;
+    margin: 0 auto;
+    color: #fff;
+
+    > span {
+      display: block;
+      padding: 10px 0;
+
+      &:first-child {
+        font-size: 34px;
+      }
+
+      &:nth-child(2) {
+        font-size: 21px;
+      }
+
+      &:last-child {
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+//详情页小标题
+.DetailTitle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 120px;
+  color: #333;
+  font-size: 24px;
+
+  > img {
+    width: 20px;
+    height: 15px;
+    margin-top: 5px;
+  }
+
+  > span {
+    padding: 0 5px;
+  }
+}
+
+//价值特点组件
+.DetailFeatures {
+  margin-bottom: 50px;
+
+  .cardList {
+    width: 80%;
+    margin: 0 auto;
+
+    :global {
+      .ant-card-bordered {
+        height: 360px;
+        box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);
+      }
+    }
+
+    .card {
+      > img {
+        display: block;
+        width: 48px;
+        height: 48px;
+        margin: 25px auto 0 auto;
+      }
+
+      > span {
+        display: block;
+
+        &:nth-child(2) {
+          margin: 20px 0;
+          color: #333;
+          font-weight: 700;
+          font-size: 18px;
+          line-height: 18px;
+          text-align: center;
+
+          &::after {
+            display: block;
+            width: 40px;
+            height: 5px;
+            margin: 10px auto 0 auto;
+            background: linear-gradient(90deg, #49a0ff, #0a5cff);
+            content: '';
+          }
+        }
+
+        &:nth-child(3) {
+          display: -webkit-box;
+          overflow: hidden;
+          white-space: normal;
+          -webkit-line-clamp: 7;
+
+          /* autoprefixer: off */
+          -webkit-box-orient: vertical;
+
+          /* autoprefixer: on */
+        }
+      }
+    }
+  }
+}
+
+//应用案例组件
+.ApplicationCase {
+  :global {
+    .ant-list-items {
+      .ant-list-item {
+        padding: 0 20%;
+
+        @media only screen and (max-width: 1500px) {
+          & {
+            padding: 0 10%;
+          }
+        }
+
+        &:first-child {
+          height: 560px;
+        }
+      }
+    }
+  }
+
+  > div:nth-child(1) {
+    position: relative;
+    z-index: 1;
+    margin-bottom: -120px;
+  }
+
+  > div:nth-child(2) {
+    position: relative;
+  }
+
+  .caseItem {
+    height: 470px;
+    padding: 0 10%;
+
+    > div {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+
+      .pic {
+        width: 55%;
+
+        > img {
+          display: block;
+          width: 85%;
+          height: 327px;
+          margin: 0 auto;
+          cursor: pointer;
+          transition: all 0.2s;
+
+          &:hover {
+            box-shadow: 2px 2px 12px 0 #b2bbc3;
+            transform: scale(1.05, 1.05);
+            transition: all 0.2s;
+          }
+        }
+      }
+
+      .text {
+        width: 45%;
+        padding: 2%;
+
+        > span {
+          display: block;
+
+          &:nth-child(1) {
+            position: relative;
+            font-weight: bold;
+            font-size: 18px;
+
+            &:hover {
+              color: #2d8cf0;
+              cursor: pointer;
+            }
+
+            &::after {
+              position: absolute;
+              bottom: -10px;
+              left: 0;
+              width: 40px;
+              height: 5px;
+              background: linear-gradient(90deg, rgba(73, 160, 255, 1), rgba(10, 92, 255, 1));
+              content: '';
+            }
+          }
+
+          &:nth-child(2) {
+            margin-top: 35px;
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+
+  .noMore {
+    color: rgba(167, 159, 159, 0.5);
+    font-size: 16px;
+    line-height: 80px;
+    text-align: center;
+  }
+}

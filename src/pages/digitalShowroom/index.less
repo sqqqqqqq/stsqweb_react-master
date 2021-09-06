@@ -1,0 +1,210 @@
+.digital {
+  .title {
+    display: block;
+    margin-bottom: 40px;
+    font-weight: bold;
+    font-size: 18px;
+    cursor: pointer;
+  }
+
+  .rightArrow {
+    width: 8px;
+    height: 8px;
+    border-top: 1px solid #fff;
+    border-right: 1px solid #fff;
+    transform: rotate(45deg);
+  }
+
+  .digital-cloud-empowerment {
+    display: flex;
+    justify-content: space-between;
+    height: 316px;
+
+    .digital-cloud-empowerment-left {
+      width: 55%;
+      min-width: 310px;
+      height: 316px;
+      background-image: url('../../assets/digitalShowroom/cloudBg.png');
+      background-size: 100% 100%;
+
+      > div {
+        width: 50%;
+        min-width: 310px;
+        height: 179px;
+        margin: 0 auto;
+        margin-top: 58px;
+        padding: 10px 30px;
+        background: linear-gradient(
+          180deg,
+          #25d9ff 0%,
+          #2579ff 21%,
+          #1d60ca 35%,
+          #0f3066 52%,
+          #2579ff 85%,
+          #25d9ff 100%
+        );
+        border-radius: 4px;
+        opacity: 0.92;
+
+        > div:first-child {
+          padding: 15px 0;
+          color: #fff;
+          font-size: 18px;
+          border-bottom: #fff solid 1px;
+        }
+
+        .digital-cloud-empowerment-left-list {
+          position: relative;
+          padding: 10px 0;
+
+          > span {
+            display: block;
+            padding: 5px 0 5px 20px;
+            color: #caffff;
+            font-size: 14px;
+
+            &::before {
+              position: absolute;
+              left: 2px;
+              width: 8px;
+              height: 8px;
+              margin-top: 7px;
+              background-color: #caffff;
+              border-radius: 5px;
+              content: ' ';
+            }
+          }
+        }
+
+        .digital-cloud-empowerment-left-button {
+          position: relative;
+          width: 130px;
+          height: 36px;
+          margin: 18px auto;
+          padding: 0 30px;
+          color: #fff;
+          line-height: 35px;
+          background: linear-gradient(180deg, #25cfff 0%, #2579ff 100%);
+          border-radius: 18px;
+          box-shadow: 0 2px 4px 0 rgba(10, 30, 63, 0.1);
+          transition: all 0.2s;
+
+          &:hover {
+            transform: translateY(-5px);
+            cursor: pointer;
+          }
+
+          > div {
+            position: absolute;
+            top: 14px;
+            right: 25px;
+          }
+        }
+      }
+    }
+
+    .digital-cloud-empowerment-right {
+      width: 40%;
+      min-width: 476px;
+      padding-left: 10px;
+
+      > span {
+        display: block;
+
+        &:nth-child(1) {
+          padding-bottom: 25px;
+          font-weight: bold;
+          font-size: 16px;
+          text-align: center;
+        }
+
+        &:nth-child(2) {
+          line-height: 37px;
+        }
+      }
+    }
+  }
+
+  .cloud-empowerment {
+    .cloud-empowerment-banner {
+      display: flex;
+      align-items: center;
+      height: 250px;
+      background-image: url('../../assets/digitalShowroom/CloudNetWorking/banner.png');
+      background-size: 100% 100%;
+
+      > div {
+        width: 70%;
+        margin: 0 auto;
+        color: #fff;
+        text-align: center;
+
+        > span {
+          display: block;
+
+          &:nth-child(1) {
+            padding-bottom: 15px;
+            font-size: 25px;
+          }
+
+          &:nth-child(2) {
+            font-size: 20px;
+          }
+        }
+      }
+    }
+
+    .cloud-empowerment-list {
+      background-image: url('../../assets/digitalShowroom/CloudNetWorking/cardBg.png');
+      background-size: 100% 100%;
+
+      > div {
+        width: 97%;
+        margin: 0 auto;
+        padding: 25px 0 5px 0;
+      }
+    }
+  }
+
+  .digital-hall {
+    background: #f8f8f8;
+
+    > div {
+      width: 70%;
+      min-height: 460px;
+      margin: 0 auto;
+      padding-top: 40px;
+    }
+  }
+
+  .digital-cloud {
+    background: #fff;
+
+    > div {
+      width: 70%;
+      margin: 0 auto;
+      padding: 40px 0 50px 0;
+    }
+  }
+
+  .digital-bigData {
+    background: #f8f8f8;
+
+    > div {
+      width: 70%;
+      margin: 0 auto;
+      padding: 40px 0 50px 0;
+
+      > span {
+        &:nth-child(1) {
+          margin-bottom: 20px;
+        }
+
+        &:nth-child(2) {
+          display: block;
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}

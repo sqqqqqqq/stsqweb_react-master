@@ -1,0 +1,98 @@
+.replayList {
+  position: relative;
+  width: 70%;
+  margin: 0 auto;
+  overflow: auto;
+}
+.replayItem {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+  // 封面图
+  .replayItemImage {
+    width: 100%;
+    height: 100%;
+  }
+  // 标题
+  .playItemTitleSpan {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 40px;
+    color: white;
+    font-size: 18px;
+    line-height: 40px;
+    background-color: rgba(0, 0, 0, 0.5);
+    > span {
+      position: absolute;
+      display: block;
+      width: 100%;
+      overflow: hidden;
+      white-space: nowrap;
+      text-align: center;
+      text-overflow: ellipsis;
+    }
+  }
+  // 播放图层
+  .playLogoHover {
+    position: absolute;
+    left: 0%;
+    display: none;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 1);
+    border: 3px solid rgba(0, 111, 248, 1);
+    border-radius: 4px;
+    opacity: 0.74;
+  }
+  // 播放中图层
+  .playingLogoHover {
+    position: absolute;
+    left: 0%;
+    display: none;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.41);
+    border: 3px solid rgba(0, 111, 248, 1);
+    border-radius: 4px;
+  }
+  .playLogo {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: none;
+    height: 50px;
+    margin: auto;
+  }
+  .playingLogo {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: none;
+    width: 50px;
+    height: 50px;
+    margin: auto;
+  }
+}
+.replayItem:hover {
+  .playLogoHover {
+    display: inline !important;
+  }
+  .playLogo {
+    display: inline !important;
+  }
+}
+
+.loading {
+  color: rgba(167, 159, 159, 0.5);
+  font-size: 16px;
+  line-height: 50px;
+  text-align: center;
+  // margin-top: -50px;
+}

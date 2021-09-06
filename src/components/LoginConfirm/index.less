@@ -1,0 +1,34 @@
+@import '../../global.less';
+
+.LoginConfirmModal {
+  :global {
+    .ant-modal-content {
+      margin-top: 100px;
+      border-radius: 10px;
+
+      .ant-modal-confirm-content {
+        font-size: 16px;
+      }
+
+      .ant-modal-confirm-btns {
+        margin-top: 0;
+
+        > button {
+          border-radius: 15px;
+
+          //   &:nth-of-type(1) {
+          //     .cusPlainBtn();
+          //   }
+
+          //   &:nth-of-type(2) {
+          //     .cusOrangeBtn();
+          //   }
+        }
+      }
+
+      .ant-modal-body {
+        padding: 20px;
+      }
+    }
+  }
+}

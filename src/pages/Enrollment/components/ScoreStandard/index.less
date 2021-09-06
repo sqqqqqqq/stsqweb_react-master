@@ -1,0 +1,47 @@
+.enrollment-score-standard-container {
+  .note {
+    display: block;
+    height: 22px;
+    margin: -20px 0 20px 0;
+    color: rgba(86, 122, 234, 1);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    line-height: 25px;
+    text-align: center;
+  }
+
+  :global {
+    .ant-table-thead {
+      > tr {
+        > th {
+          color: #567aea;
+          background: rgba(177, 196, 255, 0.4);
+        }
+      }
+    }
+
+    .ant-table-body {
+      border-bottom: 1px solid #f0f0f0;
+
+      &::-webkit-scrollbar {
+        width: 5px;
+        height: 5px;
+        background-color: rgba(244, 242, 254, 1);
+      }
+
+      &::-webkit-scrollbar-thumb {
+        background-color: rgba(176, 171, 252, 1);
+        border-radius: 2.5px;
+      }
+
+      tr {
+        &:last-child {
+          > td {
+            border-bottom: 0 !important; // .ant-table-body给了个 border-bottom，所以最后一行的border-bottom要去掉
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,53 @@
+.achievement-container {
+  :global {
+    .ant-row {
+      justify-content: space-between;
+    }
+  }
+
+  .achievement-item {
+    padding-bottom: 20px;
+    border-radius: 6px;
+    box-shadow: 0 0 10px 1px rgba(202, 195, 195, 0.3);
+
+    .banner {
+      position: relative;
+      height: 70px;
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+      border-top-left-radius: 6px;
+      border-top-right-radius: 6px;
+
+      > span:first-child {
+        position: absolute;
+        left: 42px;
+        height: 70px;
+        color: #fff;
+        font-size: 20px;
+        line-height: 70px;
+      }
+
+      > a {
+        position: absolute;
+        top: 26px;
+        right: 40px;
+        color: #fff;
+        font-size: 15px;
+      }
+    }
+
+    li {
+      padding: 20px 0 0 5px;
+      font-size: 16px;
+      text-align: left;
+
+      a {
+        color: #000;
+        &:hover {
+          color: #1890ff;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}

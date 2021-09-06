@@ -1,0 +1,27 @@
+.mecBanner {
+  display: flex;
+  align-items: center;
+  min-width: 1080px;
+  height: 460px;
+  overflow: hidden;
+  background-image: url('../../../../assets/home/bannerPics/MEC/bg.png');
+  background-position: center;
+  background-size: cover;
+
+  .mecBanner-container {
+    width: 1081px;
+    margin: 0 auto;
+
+    >img {
+      display: block;
+
+      &:nth-child(2) {
+        margin: 55px auto 0 auto;
+
+        &:hover {
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}

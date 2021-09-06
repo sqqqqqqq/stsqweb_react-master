@@ -1,0 +1,119 @@
+@import '../../../../global.less';
+
+.cases {
+  .cases-container {
+    display: flex;
+    justify-content: space-between;
+
+    .excellentCases {
+      width: 314px;
+      min-width: 240px;
+      height: 484px;
+      background: linear-gradient(181deg, #2579ff 0%, #0068e2 71%, #25aaff 100%);
+
+      .excellentCases-container {
+        position: relative;
+        height: 95%;
+        margin: 0 20px;
+        padding: 30px 0 20px 0;
+
+        >span {
+          display: block;
+          padding: 10px 0;
+          color: #fff;
+
+          &:nth-child(1) {
+            font-size: 20px;
+          }
+
+          &:nth-child(2) {
+            font-size: 16px;
+          }
+        }
+
+        .excellentCases-container-btn {
+          width: 156px;
+          height: 40px;
+          margin-top: 45px;
+          color: #2579ff;
+          font-weight: 500;
+          font-size: 18px;
+          line-height: 40px;
+          text-align: center;
+          background: #fff;
+          border-radius: 2px;
+          cursor: pointer;
+        }
+
+        >img {
+          position: absolute;
+          right: 0;
+          bottom: 0;
+        }
+      }
+    }
+
+    .caseList {
+      flex-grow: 1;
+      margin-left: 20px;
+
+      .caseList-card {
+        height: 234px;
+        background: #fff;
+        box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.1);
+
+        &:hover {
+          box-shadow: 0 0 12px 0 rgba(57, 57, 57, 0.34);
+          cursor: pointer;
+        }
+
+        >div {
+          padding: 30px 20px;
+
+          :global {
+            .ant-tag {
+              display: inline-block;
+              box-sizing: border-box;
+              margin: 5px 0;
+              padding: 0 10px;
+              color: @blueColor;
+              font-size: 12px;
+              line-height: 20px;
+              white-space: nowrap;
+              background-color: #fff;
+              border-color: @blueColor;
+              border-style: solid;
+              border-width: 1px;
+              border-radius: 2px;
+            }
+          }
+
+          >div {
+            display: -webkit-box;
+            margin: 10px 0;
+            overflow: hidden;
+            word-wrap: break-word;
+            word-break: break-all;
+
+            /* autoprefixer: off */
+            -webkit-box-orient: vertical;
+
+            /* autoprefixer: on */
+
+            &:nth-child(2) {
+              color: #373d41;
+              font-weight: 600;
+              font-size: 20px;
+              -webkit-line-clamp: 2;
+            }
+
+            &:nth-child(3) {
+              font-size: 16px;
+              -webkit-line-clamp: 3;
+            }
+          }
+        }
+      }
+    }
+  }
+}

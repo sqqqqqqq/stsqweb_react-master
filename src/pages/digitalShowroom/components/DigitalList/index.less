@@ -1,0 +1,44 @@
+.digitalList {
+  //第三个模块尚未开放
+  :global(.ant-row) {
+    > div:nth-child(1),
+    :nth-child(2) {
+      .card {
+        transition: all 0.2s;
+
+        &:hover {
+          box-shadow: 0 0 23px 0 rgba(57, 57, 57, 0.34);
+          transform: translateY(-10px);
+          cursor: pointer;
+        }
+      }
+    }
+
+    > div:nth-child(3) {
+      span {
+        color: #ddd;
+      }
+    }
+  }
+
+  .card {
+    height: 278px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 23px 0 rgba(57, 57, 57, 0.18);
+
+    &:nth-child(1) > img {
+      width: 100%;
+      height: 216px;
+    }
+
+    > div {
+      padding: 10px 20px;
+
+      > span {
+        display: inline-block;
+        padding: 10px;
+      }
+    }
+  }
+}

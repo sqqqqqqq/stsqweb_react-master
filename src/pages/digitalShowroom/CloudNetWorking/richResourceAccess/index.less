@@ -1,0 +1,266 @@
+.Banner {
+  height: 450px;
+  background-image: url('../../../../assets/digitalShowroom/CloudNetWorking/richResourceAccess/bg.png');
+  background-size: 100% 100%;
+
+  .Banner-contain {
+    display: flex;
+    justify-content: space-around;
+    width: 85%;
+    height: 100%;
+    margin-left: 10%;
+
+    .Banner-contain-left {
+      display: flex;
+      align-items: center;
+      min-width: 590px;
+
+      > div {
+        > span {
+          display: block;
+          color: #fff;
+          font-family: Yuanti SC;
+
+          &:nth-child(1) {
+            padding-bottom: 15px;
+            font-size: 35px;
+          }
+
+          &:nth-child(2),
+          &:nth-child(3),
+          &:nth-child(4) {
+            font-size: 20px;
+            letter-spacing: 3px;
+          }
+        }
+      }
+    }
+
+    .Banner-contain-right {
+      position: relative;
+      width: 670px;
+
+      > img {
+        &:nth-child(1) {
+          height: 100%;
+        }
+
+        &:nth-child(2),
+        &:nth-child(3),
+        &:nth-child(4) {
+          position: absolute;
+        }
+
+        &:nth-child(2) {
+          top: 30%;
+          left: -3%;
+          animation: clouds 4s linear infinite alternate;
+        }
+
+        &:nth-child(3) {
+          top: 45%;
+          left: 75%;
+          animation: clouds 3s 1s linear infinite alternate;
+        }
+
+        &:nth-child(4) {
+          left: 55%;
+          animation: clouds 4s 1.5s linear infinite alternate;
+        }
+      }
+
+      @keyframes clouds {
+        from {
+          transform: translateY(0);
+        }
+
+        to {
+          transform: translateY(-50%);
+        }
+      }
+    }
+  }
+}
+
+.platform {
+  position: relative;
+  min-width: 900px;
+
+  .site {
+    height: 380px;
+    margin-top: 200px;
+
+    > img {
+      position: relative;
+      display: block;
+      margin: 0 auto;
+
+      &:nth-child(1) {
+        z-index: 1;
+      }
+
+      &:nth-child(2) {
+        bottom: 360px;
+        left: 5px;
+        z-index: 2;
+        opacity: 0.2;
+        animation: light 1.5s linear infinite alternate;
+        animation-fill-mode: forwards;
+      }
+
+      &:nth-child(3) {
+        bottom: 550px;
+        z-index: 3;
+        animation: blueCloud 3s linear infinite alternate;
+        animation-fill-mode: forwards;
+      }
+    }
+  }
+
+  .textList {
+    position: absolute;
+    top: 0;
+    width: 100%;
+
+    .text {
+      position: relative;
+      z-index: 4;
+      display: flex;
+      align-items: center;
+      max-width: 300px;
+
+      > img:hover {
+        animation: number 1.5s linear infinite alternate;
+        animation-fill-mode: forwards;
+      }
+
+      > span {
+        padding-left: 10px;
+        font-weight: bold;
+        font-size: 20px;
+      }
+    }
+
+    > div {
+      &:nth-child(1) {
+        bottom: 90px;
+        left: 17%;
+
+        > span {
+          width: 170px;
+        }
+      }
+
+      &:nth-child(2) {
+        left: 2%;
+
+        > span {
+          width: 160px;
+        }
+      }
+
+      &:nth-child(3) {
+        bottom: 300px;
+        left: 60%;
+      }
+
+      &:nth-child(4) {
+        bottom: 220px;
+        left: 70%;
+      }
+
+      &:nth-child(5) {
+        bottom: 140px;
+        left: 83%;
+
+        > span {
+          width: 110px;
+        }
+      }
+    }
+  }
+
+  @keyframes number {
+    0% {
+      opacity: 1;
+    }
+
+    100% {
+      opacity: 0.2;
+    }
+  }
+
+  @keyframes light {
+    0% {
+      opacity: 0.2;
+    }
+
+    100% {
+      opacity: 1;
+    }
+  }
+
+  @keyframes blueCloud {
+    from {
+      transform: translateY(0);
+    }
+
+    to {
+      transform: translateY(-50%);
+    }
+  }
+}
+
+.richResource {
+  overflow: hidden;
+  font-family: Yuanti SC;
+
+  .title {
+    display: block;
+    padding: 45px 0;
+    font-weight: bold;
+    font-size: 25px;
+  }
+
+  .richResource-contain {
+    width: 70%;
+    margin: 0 auto;
+
+    @media only screen and (max-width: 1800px) {
+      & {
+        width: 80%;
+      }
+    }
+
+    @media only screen and (max-width: 1500px) {
+      & {
+        width: 90%;
+      }
+    }
+
+    @media only screen and (max-width: 1350px) {
+      & {
+        width: 95%;
+      }
+    }
+
+    .richResource-contain-architecture {
+      margin-top: 30px;
+
+      > img {
+        width: 100%;
+      }
+    }
+
+    .richResource-contain-cooperate {
+      height: 455px;
+      margin-top: 30px;
+
+      > img {
+        display: block;
+        width: 65%;
+        margin: 0 auto;
+      }
+    }
+  }
+}

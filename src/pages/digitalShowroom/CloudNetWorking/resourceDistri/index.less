@@ -1,0 +1,282 @@
+.body {
+  padding: 100px 0;
+  background: rgba(75, 75, 75, 100);
+}
+
+.container {
+  display: flex;
+  width: 1200px;
+  height: 694px;
+  margin: 0 auto;
+  background: #fff;
+  box-shadow: 0 0 4px 0 rgba(233, 240, 255, 0.98);
+}
+
+.left {
+  position: relative;
+  width: 680px;
+  height: 100%;
+  padding: 54px 34px 45px;
+  // background-color: #6bb5ff31;
+
+  :global {
+    .ant-list-item {
+      margin: 0 !important;
+      padding: 0;
+    }
+
+    .ant-card {
+      width: 98px;
+      height: 72px;
+      padding: 12px 0;
+      border: 0;
+    }
+
+    .ant-card-body {
+      padding: 0;
+
+      .ant-card-meta-title {
+        margin-bottom: 0;
+        color: #fff;
+        font-weight: 400;
+        font-size: 14px;
+        font-family: PingFangSC-Regular, PingFang SC;
+      }
+
+      .ant-card-meta-description {
+        color: #fff;
+        font-weight: 500;
+        font-size: 22px;
+        font-family: PingFang-SC-Medium, PingFang-SC;
+      }
+    }
+
+    .ant-row > div {
+      &:nth-child(1) {
+        .ant-card {
+          background: linear-gradient(135deg, #9aaefe 0%, #6b8aff 100%);
+        }
+      }
+      &:nth-child(2) {
+        .ant-card {
+          background: linear-gradient(135deg, #6bb5ff 0%, #48a4ff 100%);
+        }
+      }
+      &:nth-child(3) {
+        .ant-card {
+          background: linear-gradient(135deg, #c09cf8 0%, #9b86fc 100%);
+        }
+      }
+      &:nth-child(4) {
+        .ant-card {
+          background: linear-gradient(135deg, #28cef7 0%, #05b7e6 100%);
+        }
+      }
+      &:nth-child(5) {
+        .ant-card {
+          background: linear-gradient(135deg, #39cccc 0%, #04c7c7 100%);
+        }
+      }
+    }
+
+    .ant-btn {
+      position: absolute;
+      top: 176px;
+      z-index: 101;
+      border: 2px solid #1790fc;
+      border-radius: 4px;
+    }
+
+    .ant-select {
+      position: absolute;
+      top: 176px;
+      z-index: 100;
+      border: 2px solid #2579ff;
+      border-radius: 4px;
+    }
+
+    .ant-select-selector {
+      padding: 0 16px !important;
+      color: #1790fc;
+      font-weight: 400;
+      font-size: 16px;
+      font-family: PingFangSC-Regular, PingFang SC;
+      line-height: 22px;
+      border: 0 !important;
+    }
+  }
+
+  .map-wrapper {
+    width: 612px;
+    height: 530px;
+    padding-top: 50px;
+  }
+
+  .pointbox {
+    position: absolute;
+    bottom: 40px;
+    left: 34px;
+
+    div {
+      display: flex;
+      align-items: center;
+
+      span {
+        margin-left: 9px;
+        color: #1790fc;
+        font-weight: 400;
+        font-size: 14px;
+        font-family: PingFangSC-Regular, PingFang SC;
+      }
+    }
+  }
+}
+
+.right {
+  width: 520px;
+  padding: 18px 24px 35px;
+  // background-color: rgb(128, 128, 128);
+
+  .title {
+    width: 120px;
+    height: 28px;
+    color: #181818;
+    font-weight: 400;
+    font-size: 20px;
+    font-family: 'PingFang-SC-Regular, PingFang-SC';
+    line-height: 28px;
+  }
+
+  .nav {
+    margin: 8px 0;
+
+    :global {
+      .ant-radio-button-wrapper {
+        width: 157px;
+        height: 40px;
+        padding: 0 11px;
+        font-size: 16px;
+        line-height: 40px;
+        text-align: center;
+
+        &:hover {
+          color: #37f;
+          background-color: #fff;
+        }
+      }
+
+      .ant-radio-button-wrapper-checked {
+        color: #37f;
+        background-color: #fff;
+      }
+    }
+  }
+
+  .nav2 {
+    // margin-bottom: 20px;
+  }
+
+  .scrollbars {
+    > div:nth-child(1) {
+      // 通过设置边距移除原有的滚动条使得不可见
+      margin-right: -21px !important;
+      margin-bottom: -21px !important;
+    }
+
+    > div:nth-child(2) {
+      // 设置引入的滚动条的高度
+      height: 4px !important;
+    }
+
+    > div:nth-child(3) {
+      // 设置引入的滚动条的水平滚动条不可见
+      display: none;
+    }
+  }
+
+  :global {
+    .ant-btn-primary {
+      background: #5c88be;
+      border-color: #5c88be;
+    }
+  }
+
+  .collapsePanel {
+    margin-bottom: 20px;
+  }
+
+  .cloud {
+    margin-right: 19px;
+    color: #373d41;
+    font-weight: 400;
+    font-size: 14px;
+    font-family: PingFangSC-Regular, PingFang SC;
+
+    &:hover {
+      color: #37f;
+    }
+    &:last-child {
+      margin-right: 10px;
+    }
+  }
+  .cloudSelect {
+    color: #37f;
+    border-bottom: 1px solid #37f;
+  }
+  .close {
+    transform: rotate(180deg);
+  }
+
+  .content {
+    .scrollbars1 {
+      > div:nth-child(1) {
+        // 通过设置边距移除原有的滚动条使得不可见
+        margin-right: -22px !important;
+        margin-bottom: -25px !important;
+      }
+
+      > div:nth-child(2) {
+        // 设置引入的滚动条的水平滚动条不可见
+        display: none;
+      }
+    }
+
+    :global {
+      .ant-table {
+        border: 1px solid #eee;
+        border-top: 0;
+
+        thead > tr > th {
+          height: 50px;
+          padding: 14px 0;
+          color: #fff;
+          font-weight: 400;
+          font-size: 14px;
+          font-family: PingFangSC-Regular, PingFang SC;
+          background: #5c88be;
+        }
+
+        .ant-table-cell-scrollbar {
+          box-shadow: none;
+        }
+
+        .ant-table-tbody {
+          > tr > td {
+            padding: 14px;
+          }
+        }
+        .columnOne {
+          border-right: 1px solid #eee;
+        }
+        .columnTwo {
+          width: 86px;
+          border-right: 1px solid #eee;
+        }
+        .columnThree {
+          width: 86px;
+          border-right: 1px solid #eee;
+        }
+      }
+    }
+  }
+}

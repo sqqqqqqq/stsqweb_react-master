@@ -1,0 +1,55 @@
+@import '../../../../layouts/comStyle.less';
+
+.framework-container {
+  .banner {
+    height: 450px;
+    padding-top: 80px;
+    text-align: center;
+    background-image: url('../../../../assets/introduce/Framework/frameworkBG.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+
+    > p {
+      width: 100%;
+      color: rgba(51, 51, 51, 1);
+      font-weight: 500;
+      font-size: 35px;
+      line-height: 31px;
+    }
+    > img {
+      margin-top: 30px;
+    }
+  }
+
+  .menu {
+    display: flex;
+    justify-content: space-between;
+    width: @validWidth;
+    height: 55px;
+    margin: -28px auto 0 auto;
+
+    button {
+      width: 180px;
+      height: 100%;
+      padding: 0;
+      color: rgba(153, 153, 153, 1);
+      font-size: 18px;
+      line-height: 55px;
+      border-radius: 6px;
+      box-shadow: 0 15px 28px 0 rgba(27, 112, 228, 0.3);
+
+      img {
+        margin-right: 5px;
+        vertical-align: middle;
+      }
+    }
+    .is-active {
+      color: #fff;
+      background: rgba(27, 112, 228, 1);
+    }
+  }
+
+  .nav-components {
+    margin-top: 40px;
+  }
+}

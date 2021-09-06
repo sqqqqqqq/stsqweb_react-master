@@ -1,0 +1,62 @@
+.order-list-container {
+  background: #f8f8f8;
+  border: 1px solid transparent;
+
+  .table {
+    width: 70%;
+    margin: 40px auto;
+    background: #fff;
+
+    h3 {
+      padding: 15px 0 15px 24px;
+      color: #181818;
+      font-weight: 600;
+      font-size: 16px;
+      border-bottom: 1px solid #f0f0f0;
+    }
+
+    :global {
+      .ant-pro-table-form-search {
+        margin-bottom: 0;
+      }
+
+      .ant-legacy-form-item-control a {
+        display: none;
+      }
+
+      .ant-form-item-label {
+        flex: 0 0 auto !important;
+        min-width: 97px;
+
+        label[title='具体应用/解决方案'] {
+          min-width: 120px;
+        }
+      }
+
+      .ant-btn {
+        padding: 4px 9px;
+      }
+
+      .ant-col-offset-16 {
+        margin: auto;
+
+        .ant-form-item {
+          text-align: center;
+        }
+
+        .ant-col.ant-form-item-label {
+          display: none;
+        }
+      }
+
+      .ant-row-start > .ant-col {
+        &:last-of-type {
+          flex: 0 0 100%;
+          max-width: 100%;
+          margin: 10px auto 0 auto;
+          text-align: center !important;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,48 @@
+.techno {
+  width: 100%;
+  background: #f9f9f9;
+  cursor: pointer;
+
+  .technoWrap {
+    width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+
+    .technoType {
+      position: relative;
+      width: 100%;
+      height: 170px;
+      padding: 1px 25px 5px;
+      border-radius: 10px;
+      transition: all 0.3s linear;
+
+      > img {
+        display: block;
+        width: 70px;
+        height: 70px;
+        margin: 0 auto;
+        margin-top: 25px;
+        margin-bottom: 20px;
+      }
+      > div {
+        top: 0;
+        left: 0;
+        > p:nth-child(1) {
+          color: #181818;
+          font-weight: 400;
+          font-size: 20px;
+          line-height: 30px;
+          text-align: center;
+        }
+        > p:nth-child(2) {
+          color: #333;
+          font-weight: 400;
+          font-size: 14px;
+          font-family: PingFangSC-Regular, PingFang SC;
+          line-height: 24px;
+          text-align: center;
+        }
+      }
+    }
+  }
+}

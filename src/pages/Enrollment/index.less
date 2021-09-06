@@ -1,0 +1,95 @@
+@validWidth: 1200px;
+
+/* 使用前必须先定义 */
+// @font-face {
+//   /* 字体名称随意起 */
+//   font-family: yingliheiti;
+
+//   /* 你下载字体所在的位置 */
+//   src: url('../../assets/font/bloomBannerFont.otf');
+//   // src: url("/assets/font/bloomBannerFont.otf");
+// }
+.enrollment {
+  background-color: #f6f8fb;
+
+  .menu-nav {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    max-width: @validWidth;
+    height: 60px;
+    margin: -20px auto 0 auto;
+    line-height: 60px;
+    background: #fff;
+    border-radius: 2px;
+    box-shadow: 0 0 5px 0 rgba(0, 21, 133, 0.07);
+
+    :global {
+      .ant-menu-item {
+        position: relative;
+        margin: 0 20px;
+        color: rgba(116, 116, 116, 1);
+        font-weight: 500;
+        font-size: 15px;
+        border-bottom: none;
+
+        a {
+          display: inline-block;
+          width: 100%;
+          height: 36px;
+          padding-left: 15px;
+          line-height: 35px;
+          border-radius: 3px;
+
+          &::before {
+            bottom: 0;
+          }
+
+          > img {
+            margin-right: 5px;
+            margin-bottom: 3px;
+          }
+        }
+
+        &:hover {
+          &::before {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: -10px;
+            width: 2px;
+            height: 45%;
+            margin: auto 0;
+            background: rgba(82, 115, 252, 1);
+            content: '';
+          }
+
+          border-bottom: none;
+
+          a {
+            color: #000;
+            background: linear-gradient(
+              88deg,
+              rgba(82, 115, 252, 0.7) 0%,
+              rgba(255, 255, 255, 0) 100%
+            );
+          }
+        }
+      }
+
+      .is-active {
+        border-bottom: none;
+
+        a {
+          color: #2d8cf0;
+          // background: linear-gradient(
+          //   88deg,
+          //   rgba(82, 115, 252, 0.7) 0%,
+          //   rgba(255, 255, 255, 0) 100%
+          // );
+        }
+      }
+    }
+  }
+}

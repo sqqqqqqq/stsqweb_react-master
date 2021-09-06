@@ -1,0 +1,77 @@
+.HotelList {
+  width: 60%;
+  margin: 0 auto;
+  .HotelCard {
+    display: flex;
+    margin-bottom: '20px' !important;
+    box-shadow: '0px 0px 20px rgba(10, 10, 10, 0.1)' !important;
+    .info {
+      position: relative;
+      width: 60%;
+      margin-right: 20px;
+      margin-left: 20px;
+      .title {
+        color: #373d41;
+        font-size: 25px;
+      }
+      .address,
+      .description {
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+      }
+      .address .environment {
+        transform-origin: center bottom;
+        cursor: pointer;
+        animation: bounce 2.5s infinite 0.5s both;
+      }
+    }
+    .subscribe {
+      position: relative;
+      bottom: 0;
+      width: 25%;
+      text-align: right;
+      .title {
+        margin-top: 20px;
+        margin-bottom: 0;
+        color: #666;
+      }
+      .price {
+        color: #2579ff;
+        font-size: 28px;
+      }
+    }
+  }
+}
+@keyframes bounce {
+  0%,
+  7%,
+  25%,
+  36%,
+  45%,
+  50% {
+    transform: translate3d(0, 0, 0);
+    animation-timing-function: ease-out;
+  }
+
+  15%,
+  16% {
+    transform: translate3d(0, -4px, 0);
+    animation-timing-function: ease-in;
+  }
+
+  30% {
+    transform: translate3d(0, -3px, 0);
+    animation-timing-function: ease-in;
+  }
+
+  41% {
+    transform: translate3d(0, -3px, 0);
+    animation-timing-function: ease-in;
+  }
+
+  47% {
+    transform: translate3d(0, -2px, 0);
+    animation-timing-function: ease-in;
+  }
+}

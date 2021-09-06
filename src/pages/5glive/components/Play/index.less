@@ -1,0 +1,42 @@
+.playDiv {
+  position: relative;
+  width: 70%;
+  height: auto;
+  margin: 0 auto;
+  overflow: auto;
+}
+.status {
+  display: grid;
+  grid-template-columns: 70px 300px;
+
+  /* 点赞 */
+  .like {
+    // width: 80px;
+    position: relative;
+    display: inline-block;
+    font-size: 20px;
+    cursor: pointer;
+    // text-align: center;
+    .like:hover {
+      color: #00a1d6;
+    }
+    .icondianzan {
+      font-size: 24px;
+    }
+  }
+  .like:hover {
+    color: #00a1d6;
+  }
+  .play {
+    display: inline-block;
+    margin: 0 3px;
+    font-size: 20px;
+    line-height: 40px;
+    i {
+      font-size: 24px;
+    }
+  }
+}
+.likeHasClick {
+  color: #00a1d6;
+}

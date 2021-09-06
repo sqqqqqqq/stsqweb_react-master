@@ -1,0 +1,117 @@
+@import '~antd/lib/style/themes/default.less';
+@import '../../layouts/comStyle.less';
+
+.home {
+  width: 100%;
+  min-width: 465px;
+  overflow: hidden;
+
+  .max-width-1200 {
+    max-width: @validWidth;
+    margin: 0 auto;
+  }
+
+  .partners {
+    min-height: 560px;
+    background-image: url('../../assets/home/partners/bg.png');
+    background-size: cover;
+  }
+
+  .empowerments {
+    min-height: 550px;
+    background: #eff3fb;
+  }
+
+  .cases {
+    min-height: 685px;
+    background-image: url('../../assets/home/cases/bg.png');
+    background-size: cover;
+  }
+
+  .exPackage {
+    height: 440px;
+    background: #eff3fb;
+  }
+
+  .coMembers {
+    height: 460px;
+  }
+
+  // >div:nth-child(3) {
+  //   height: 585px;
+  //   background-color: rgb(232, 240, 252);
+
+  //   .footer-line {
+  //     position: relative;
+  //     height: 145px;
+  //     overflow: hidden;
+
+  //     @keyframes move_wave {
+  //       0% {
+  //         transform: translateX(0) translateZ(0) scaleY(1);
+  //       }
+
+  //       50% {
+  //         transform: translateX(-25%) translateZ(0) scaleY(0.75);
+  //       }
+
+  //       100% {
+  //         transform: translateX(-50%) translateZ(0) scaleY(1);
+  //       }
+  //     }
+
+  //     >div:nth-child(1) {
+  //       position: absolute;
+  //       bottom: -33px;
+  //       left: -100px;
+  //       z-index: 1;
+  //       width: 200%;
+  //       height: 120px;
+  //       background-image: url('../../assets/home/footerBG1.png');
+  //       background-size: cover;
+  //       opacity: 0.5;
+  //     }
+
+  //     >div:nth-child(2) {
+  //       position: absolute;
+  //       bottom: -70px;
+  //       left: -100px;
+  //       width: 300%;
+  //       height: 189px;
+  //       background-image: url('../../assets/home/footerBG2.png');
+  //       background-repeat: repeat no-repeat;
+  //       background-size: 50% 120px;
+  //       transform-origin: center bottom;
+  //       opacity: 0.75;
+  //       animation: move_wave 10s linear infinite;
+  //     }
+
+  //     >div:nth-child(3) {
+  //       position: absolute;
+  //       bottom: -60px;
+  //       left: -100px;
+  //       width: 300%;
+  //       height: 155px;
+  //       background-image: url('../../assets/home/footerBG3.png');
+  //       background-repeat: repeat no-repeat;
+  //       background-size: 50% 120px;
+  //       transform-origin: center bottom;
+  //       animation: move_wave 13s linear infinite;
+  //     }
+  //   }
+  // }
+}
+
+:global {
+  .ant-carousel .slick-dots li.slick-active {
+    width: 35px;
+  }
+
+  .ant-carousel .slick-dots li {
+    width: 25px;
+  }
+
+  .ant-carousel .slick-dots li button {
+    height: 5px;
+  }
+}

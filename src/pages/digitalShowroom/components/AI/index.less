@@ -1,0 +1,53 @@
+.player {
+  width: 1200px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+:global(.ant-modal-body) {
+  padding: 23px 0 23px 55px;
+}
+.header {
+  position: relative;
+  width: 100%;
+  height: 320px;
+  background-color: #06091a;
+  background-repeat: no-repeat;
+  background-size: 106% 100%;
+  .headerWrap {
+    height: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+    > p {
+      width: 500px;
+      padding-left: 120px;
+      color: #fff;
+      letter-spacing: 2px;
+    }
+    > p:nth-child(1) {
+      margin-top: 90px;
+      font-weight: 600;
+      font-size: 25px;
+    }
+    > p:nth-child(2) {
+      font-size: 14px;
+    }
+    > button {
+      width: 122px;
+      height: 36px;
+      margin: 25px 140px 0;
+      color: #fff;
+      background-image: linear-gradient(90deg, #00dfe9, #007fd3);
+      border: 1px solid #00c1de;
+      outline: none;
+      cursor: pointer;
+      &:hover {
+        color: #b7c02a;
+      }
+    }
+    :global(.anticon svg) {
+      width: 38px;
+      height: 25px;
+    }
+  }
+}

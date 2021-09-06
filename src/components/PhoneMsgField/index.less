@@ -1,0 +1,23 @@
+@import '../../global.less';
+
+:global {
+  .verify-code-item-scpip {
+    .ant-form-item-label > label {
+      &::before {
+        display: inline-block;
+        margin-right: 4px;
+        color: #ff4d4f;
+        font-size: 14px;
+        font-family: SimSun, sans-serif;
+        line-height: 1;
+        content: '*';
+      }
+    }
+  }
+}
+
+.sendVerifyCodeBtn {
+  margin-left: 20px;
+  border-radius: 20px;
+  // .cusOrangeBtn();
+}

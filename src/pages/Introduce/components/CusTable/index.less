@@ -1,0 +1,36 @@
+@import '../../../../layouts/comStyle.less';
+
+.cus-table-container {
+  width: @validWidth;
+  margin: 0 auto 20px;
+
+  :global {
+    .ant-table {
+      max-height: 550px;
+      overflow-y: scroll;
+      border: 1px solid #f0f0f0;
+
+      // 设置滚动条
+      &::-webkit-scrollbar {
+        width: 5px;
+        height: 5px;
+        background-color: rgba(244, 242, 254, 1);
+      }
+      // 设置滑块
+      &::-webkit-scrollbar-thumb {
+        background-color: rgba(216, 213, 213, 1);
+        border-radius: 2.5px;
+      }
+
+      .ant-table-tbody {
+        tr {
+          &:last-child {
+            > td {
+              border-bottom: 0 !important; // .ant-table-body给了个 border-bottom，所以最后一行的border-bottom要去掉
+            }
+          }
+        }
+      }
+    }
+  }
+}

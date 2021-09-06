@@ -1,0 +1,49 @@
+@import '../../../../layouts/comStyle.less';
+
+.big-data-card-list-container {
+  display: grid;
+  grid-template-rows: repeat(2, 150px);
+  grid-template-columns: repeat(2, 50%);
+  width: @validWidth;
+  margin: 10px auto 50px auto;
+  border: 2px solid rgba(240, 245, 253, 0.28);
+
+  .card-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(240, 245, 253, 0.28);
+
+    &:hover {
+      background: rgba(247, 250, 255, 1);
+      box-shadow: 0 0 7px 0 rgba(27, 112, 228, 0.28);
+    }
+
+    > div:nth-child(1) {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 35%;
+      height: 100%;
+    }
+
+    > div:nth-child(2) {
+      width: 65%;
+
+      > span {
+        display: block;
+
+        &:nth-child(1) {
+          margin: -15px 0 15px 0;
+          font-weight: 800;
+          font-size: 15px;
+        }
+
+        &:nth-child(2) {
+          font-size: 14px;
+          line-height: 20px;
+        }
+      }
+    }
+  }
+}

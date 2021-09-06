@@ -1,0 +1,138 @@
+@import '../../global.less';
+
+.app-storage-banner {
+  position: relative;
+  height: 360px;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+
+  > img,
+  > span {
+    position: absolute;
+  }
+
+  > img {
+    &:nth-of-type(1) {
+      top: 30%;
+      left: calc((100% - @validWidth) / 2 + 20px);
+      width: 185px;
+      height: 145px;
+    }
+
+    &:nth-of-type(2) {
+      top: 42%;
+      left: calc((100% - @validWidth) / 2 + 220px);
+      width: 280px;
+      height: 80px;
+    }
+
+    &:nth-of-type(3) {
+      top: 70%;
+      left: calc((100% - @validWidth) / 2 + 220px);
+      width: 240px;
+      height: 50px;
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+
+  > span {
+    top: 30%;
+    left: calc((100% - @validWidth) / 2 + 220px);
+    color: #fff;
+    font-size: 22px;
+    letter-spacing: 10px;
+  }
+}
+
+.app-storage-menu-container {
+  max-width: calc(@validWidth + 100px);
+  margin: 20px auto 0 auto;
+
+  > span {
+    margin-right: 20px;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 60px;
+  }
+
+  .app-storage-menu {
+    display: inline-block;
+    max-width: @validWidth;
+
+    :global {
+      .ant-menu-item {
+        margin: 0 10px;
+        padding: 0 10px;
+      }
+    }
+  }
+}
+
+.app-storage-list {
+  max-width: @validWidth;
+  margin: 20px auto 0 auto !important;
+
+  :global {
+    .ant-card-body {
+      height: 200px;
+      border: none;
+      box-shadow: 0 0 12px 0 rgba(57, 57, 57, 0.18);
+
+      &:hover {
+        box-shadow: 0 0 12px 0 rgba(57, 57, 57, 0.34);
+        cursor: pointer;
+      }
+
+      > div {
+        display: -webkit-box;
+        overflow: hidden;
+
+        /* autoprefixer: off */
+        -webkit-box-orient: vertical;
+
+        /* autoprefixer: on */
+        &:nth-of-type(1) {
+          // 标题
+          color: #222;
+          font-weight: bold;
+          font-size: 16px;
+          -webkit-line-clamp: 2;
+        }
+
+        &:nth-of-type(2) {
+          height: 66px;
+          font-size: 14px;
+          -webkit-line-clamp: 3;
+        }
+      }
+
+      .ant-tag {
+        display: inline-block;
+        box-sizing: border-box;
+        margin: 5px 0;
+        padding: 0 10px;
+        color: @blueColor;
+        font-size: 12px;
+        line-height: 20px;
+        white-space: nowrap;
+        background-color: #fff;
+        border-color: @blueColor;
+        border-style: solid;
+        border-width: 1px;
+        border-radius: 2px;
+      }
+
+      .time {
+        color: #a5a5a5;
+      }
+    }
+  }
+
+  .loadMoreBtn {
+    display: block;
+    margin: 20px auto;
+  }
+}

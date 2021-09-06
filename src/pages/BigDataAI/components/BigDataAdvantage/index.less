@@ -1,0 +1,80 @@
+@import '../../../../layouts/comStyle.less';
+@import '../../index.less';
+
+.big-data-advantage-video-container {
+  position: relative;
+  padding-bottom: 60px;
+  text-align: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  transition: all 0.2s;
+
+  .left-arrow,
+  .right-arrow {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 45px;
+    margin: auto;
+    color: #fff;
+    font-size: 24px;
+    background: rgb(58, 67, 80, 0.1);
+    border-radius: 50%;
+    opacity: 1;
+    transition: all 0.3s;
+  }
+  .left-arrow {
+    left: calc((100% - @validWidth) / 2 + 40px);
+  }
+  .right-arrow {
+    right: calc((100% - @validWidth) / 2 + 40px);
+  }
+
+  &:hover {
+    .left-arrow,
+    .right-arrow {
+      opacity: 1;
+    }
+
+    .left-arrow {
+      left: calc((100% - @validWidth) / 2 + 50px);
+    }
+
+    .right-arrow {
+      right: calc((100% - @validWidth) / 2 + 50px);
+    }
+  }
+
+  .detail {
+    margin: -20px 0 20px 0;
+    color: #fff;
+    line-height: 20px;
+    text-align: center;
+  }
+
+  .video {
+    padding: 0 170px;
+  }
+
+  :global {
+    .ant-carousel {
+      width: @validWidth;
+      margin: 0 auto;
+
+      .slick-dots-bottom {
+        bottom: -45px;
+      }
+    }
+  }
+}
+
+.eight-app-component {
+  display: block !important;
+  width: @validWidth !important;
+  margin: 0 auto;
+}
